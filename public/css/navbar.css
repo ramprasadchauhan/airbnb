@@ -1,0 +1,33 @@
+.btn-search {
+  background-color: #fe424d;
+  color: #fff;
+  border-radius: 20px;
+  padding: 0 1rem;
+}
+.btn-search:hover {
+  background-color: #fe424d;
+  color: #fff;
+}
+.btn-search i {
+  display: inline;
+  margin-right: 0.5rem;
+}
+.search-inp {
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+}
+.signup:hover {
+  border: 1px solid green;
+  background-color: aquamarine;
+  border-radius: 10px;
+}
+.login:hover {
+  border: 1px solid green;
+  background-color: aquamarine;
+  border-radius: 10px;
+}
+.logout:hover {
+  border: 1px solid green;
+  background-color: aquamarine;
+  border-radius: 10px;
+}
