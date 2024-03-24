@@ -5,6 +5,7 @@ const passport = require("passport");
 const { saveRedirecUrl } = require("../middleware.js");
 
 const userController = require("../controllers/users.js");
+const listingController = require("../controllers/listings.js");
 
 // signup
 router
@@ -25,6 +26,7 @@ router
     }),
     userController.login
   );
+router.get("/", listingController.index);
 
 router.get("/logout", userController.logout);
 

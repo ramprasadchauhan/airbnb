@@ -15,11 +15,11 @@ module.exports.signup = async (req, res) => {
         return next(err);
       }
       req.flash("success", "welcome to wanderlust");
-      res.redirect("/listings");
+      return res.redirect("/listings");
     });
   } catch (e) {
     req.flash("success", e.message);
-    res.redirect("/signup");
+    return res.redirect("/signup");
   }
 };
 

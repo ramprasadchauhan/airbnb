@@ -8,7 +8,6 @@ const mongoose = require("mongoose");
 const path = require("path");
 const methodOverride = require("method-override");
 const ejsMate = require("ejs-mate");
-const dbUrl = process.env.ATLAS_DB_URL;
 
 const ExpressError = require("./utils/ExpressError.js");
 const listingRouter = require("./routes/listing.js");
@@ -22,6 +21,7 @@ const passport = require("passport");
 const LocalStrategy = require("passport-local");
 const User = require("./models/user.js");
 const { error } = require("console");
+const dbUrl = process.env.ATLAS_DB_URL;
 
 main()
   .then(() => {
